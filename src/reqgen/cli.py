@@ -12,7 +12,7 @@ def collect_files(target: Path) -> list[Path]:
             sys.exit(1)
         return [target]
     if target.is_dir():
-        return list(target.glob("*.py"))
+        return list(target.rglob("*.py"))
     print(f"Error: {target} does not exist.", file=sys.stderr)
     sys.exit(1)
 
