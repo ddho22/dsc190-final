@@ -1,8 +1,11 @@
 # reqgen
 
 `reqgen` is a command-line tool that scans a Python project and generates a
-`requirements.txt` file listing all third-party packages it imports. Point it
-at a single `.py` file or an entire directory and it handles the rest.
+`requirements.txt` file listing all third-party packages it imports. I have
+had issues at work with documenting my package and wanted to make an easier
+way for me to get all the required packages of python projects with multiple 
+nested subfolders. This script works if you point it at a python package or
+a directory.
 
 ## Usage
 
