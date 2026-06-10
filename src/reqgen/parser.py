@@ -23,7 +23,7 @@ def extract_imports(path: Path) -> set[str]:
             if node.module and node.level == 0:
                 names.add(node.module.split(".")[0])
 
-    return {n for n in names if n not in _STDLIB and n != "__future__"}
+    return {n for n in names if n != "__future__"}
 
 
 # Common import-name → PyPI package-name mappings
