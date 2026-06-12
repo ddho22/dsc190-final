@@ -18,13 +18,13 @@ uv add "git+https://github.com/ddho22/dsc190-final.git"
 **Single file:**
 
 ```bash
-reqgen script.py
+uv run reqgen script.py
 ```
 
 **Directory (flat or nested):**
 
 ```bash
-reqgen my_project/
+uv run reqgen my_project/
 ```
 
 `reqgen` recursively finds all `.py` files in subdirectories.
@@ -32,7 +32,7 @@ reqgen my_project/
 **Custom output path:**
 
 ```bash
-reqgen my_project/ -o deps.txt
+uv run reqgen my_project/ -o deps.txt
 ```
 
 The tool writes one package name per line to the output file
